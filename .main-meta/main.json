@@ -4,13 +4,13 @@
    "content":{
       "metaDataVersion":"1.0.0",
       "name":"com.microchip.matlab.project.matlab-sip-mc-dspic33cdvl64mc106-foc-smo",
-      "version":"1.1.0",
-      "displayName":"MATLAB-Simulink model for Sensorless FOC with flux weakening control using Sliding mode observer (SMO)",
+      "version":"x.x.x",
+      "displayName":"xxxxxxxxxxxxxxx",
       "projectName":"matlab-sip-mc-dspic33cdvl64mc106-foc-smo",
-      "shortDescription":"MATLAB-Simulink model for Sensorless FOC with flux weakening control using Sliding mode observer (SMO) with dsPIC33CDVL64MC106 Motor Control Development Board",
-	  "simulationTool":{
+      "shortDescription":"xxxxxxxxxxxxxxx",
+      "simulationTool":{
          "name":"MATLAB/Simulink",
-         "semverRange":">=2023"
+         "semverRange":">=2022"
       },
 	  "addonPackages":[
 				"MATLAB add on packages",
@@ -21,12 +21,12 @@
 				"Fixed-Point Designer"
       ],
       "compiler":{
-         "name":"XC-DSC",
-         "semverRange":">=3.00"
+         "name":"XC16",
+         "semverRange":"^2.0.0"
       },
       "dfp":{
-         "name":"dsPIC33CD-MC_DFP",
-         "semverRange":"=1.2.127"
+         "name":"xxxxxxxxxxxxxxx",
+         "semverRange":">=x.x.x"
       },
       "device":{
          "metaDataVersion":"1.0.0",
@@ -34,20 +34,13 @@
          "content":{
             "metaDataVersion":"1.0.0",
             "category":"com.microchip.device",
-            "name":"dsPIC33CDVL64MC106",
+            "name":"xxxxxxxxxxxxxxx",
             "versionRange":"*"
          }
       },
-	  "peripherals":[
-         "ADC",
-		 "PWM"
-      ],
       "keywords":[
-         "Motor Control",
-         "PMSM",
-         "Sensorless Control",
-         "FOC",
-         "dsPIC"
+        "GPIO",
+		"UART"
       ]
    }
 }

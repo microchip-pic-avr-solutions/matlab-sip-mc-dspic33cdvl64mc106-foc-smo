@@ -21,7 +21,7 @@ pipeline {
         */
         NOTIFICATION_EMAIL = '1f1319de.microchip.com@amer.teams.ms'  
         // GitHub production organization name
-        GITHUB_PRODUCTION_ORGANIZATION = "microchip-pic-avr-solutions"
+        GITHUB_PRODUCTION_ORGANIZATION = "microchip-pic-avr-examples"
         
         /*
             GitHub Deploy Stage Information
@@ -54,9 +54,6 @@ pipeline {
         MPLABX_PROJECT_SOURCE = "../"
     }
 
-    triggers { 
-        cron(env.BRANCH_NAME == 'develop' ? 'H H 1 * *': '') 
-    } 
     options {
         timestamps()
         timeout(time: 30, unit: 'MINUTES')
@@ -108,24 +105,6 @@ pipeline {
                     validateMetaData(
                         unapprovedKeywordsOverrideList: "${UNAPPROVED_KEYWORDS_OVERRIDE_LIST}"
                     )
-                }
-            }
-        } 
-        
-        // Creating tag in Bitbucket repo
-        stage('Bitbucket Tag Creation') {
-            when {
-                anyOf {
-                    allOf {
-                        not { changeRequest() }
-                        anyOf {branch 'master';}
-                    }
-                }
-            }
-            
-            steps {
-               script {
-                    bitbucketTagCreation()
                 }
             }
         } 
