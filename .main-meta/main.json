@@ -1,0 +1,46 @@
+{
+   "metaDataVersion":"1.0.0",
+   "category":"com.microchip.matlab.project",
+   "content":{
+      "metaDataVersion":"1.0.0",
+      "name":"com.microchip.matlab.project.matlab-sip-mc-dspic33cdvl64mc106-foc-smo",
+      "version":"x.x.x",
+      "displayName":"xxxxxxxxxxxxxxx",
+      "projectName":"matlab-sip-mc-dspic33cdvl64mc106-foc-smo",
+      "shortDescription":"xxxxxxxxxxxxxxx",
+      "simulationTool":{
+         "name":"MATLAB/Simulink",
+         "semverRange":">=2022"
+      },
+	  "addonPackages":[
+				"MATLAB add on packages",
+				"Simulink",
+				"MPLAB Device blocks for Simulink",
+				"Motor Control Blockset",
+				"Embedded Coder",
+				"Fixed-Point Designer"
+      ],
+      "compiler":{
+         "name":"XC16",
+         "semverRange":"^2.0.0"
+      },
+      "dfp":{
+         "name":"xxxxxxxxxxxxxxx",
+         "semverRange":">=x.x.x"
+      },
+      "device":{
+         "metaDataVersion":"1.0.0",
+         "category":"com.microchip.portal.contentRef",
+         "content":{
+            "metaDataVersion":"1.0.0",
+            "category":"com.microchip.device",
+            "name":"xxxxxxxxxxxxxxx",
+            "versionRange":"*"
+         }
+      },
+      "keywords":[
+        "GPIO",
+		"UART"
+      ]
+   }
+}
