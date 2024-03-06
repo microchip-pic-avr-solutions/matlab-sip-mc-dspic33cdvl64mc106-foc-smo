@@ -38,10 +38,6 @@
             "versionRange":"*"
          }
       },
-	  "peripherals":[
-         "ADC",
-		 "PWM"
-      ],
       "keywords":[
          "Motor Control",
          "PMSM",
